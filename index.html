@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Typing Speed Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="masthead">
+        <h1>تست سنجش سرعت تایپ</h1>
+    </header>
+    <main class="main">
+        <article class="intro">
+            <p>
+                فرایند سنجش سرعت تایپ بدین گونه است که با شروع تایپ کاربر، تایمر شروع به شمارش زمان می‌کند و با تایپ هر حرف توسط کاربر، مطابقت متن کاربر با متن نمایش داده شده چک می‌شود.
+            </p>
+        </article>
+        <section class="test-area">
+            <div class="pattern">
+                متن الگو :
+            </div>
+            <div id="origin-text">
+                <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="4" placeholder="با تایپ اولین حرف تایمر شمارش را آغاز می‌کند"></textarea>
+            </div>
+            <div class="meta">
+                <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section>
+                <button id="reset">از نو</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

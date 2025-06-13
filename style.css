@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --primary: #4a6ee0;
+    --primary-hover: #6384f8;
+    --bg: #0a0d14;
+    --card: #1a1d25;
+    --text: #ffffff;
+    --error: #ff4646;
+    --success: #4caf50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Vazirmatn", "Tahoma", "Arial", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.masthead {
+    background-color: var(--card);
+    padding: 15px 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.masthead h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.test-area {
+    background-color: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.pattern {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#origin-text {
+    background-color: rgba(74, 110, 224, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#origin-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    direction: ltr;
+    text-align: left;
+    line-height: 1.5;
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+}
+
+.test-wrapper {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#test-area {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: var(--text);
+    background-color: rgba(26, 29, 37, 0.8);
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    direction: ltr;
+    text-align: left;
+    line-height: 1.5;
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    transition: all 0.3s ease;
+}
+
+#test-area:focus {
+    border-color: var(--primary-hover);
+}
+
+#test-area::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Vazirmatn", sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#clock .timer {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    background-color: rgba(74, 110, 224, 0.1);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    letter-spacing: 1px;
+}
+
+#reset {
+    background: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+#reset:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+#reset:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .masthead {
+        padding: 12px 20px;
+        margin-bottom: 15px;
+    }
+
+    .masthead h1 {
+        font-size: 1.3rem;
+    }
+
+    .test-area {
+        padding: 20px;
+    }
+
+    .intro p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    #test-area {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .meta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #clock {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    #reset {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .masthead h1 {
+        font-size: 1.2rem;
+    }
+
+    .pattern {
+        font-size: 0.9rem;
+    }
+
+    #origin-text p {
+        font-size: 0.9rem;
+    }
+
+    #test-area {
+        font-size: 0.85rem;
+    }
+
+    #clock .timer {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-height: 700px) {
+    .masthead {
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+
+    .masthead h1 {
+        font-size: 1.3rem;
+    }
+
+    .test-area {
+        padding: 20px;
+    }
+
+    .intro p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    #origin-text {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    #test-area {
+        padding: 12px;
+    }
+
+    .meta {
+        margin-top: 10px;
+    }
+
+    #clock .timer {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+
+    #reset {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
