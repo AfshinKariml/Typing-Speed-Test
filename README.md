@@ -22,19 +22,6 @@ Test your typing speed and accuracy with this simple web application! 🚀
 git clone https://github.com/AfshinKariml/Typing-Speed-Test
 cd typing-speed-test
 ```
-
-2. 📦 Install dependencies:
-```bash
-npm install
-```
-
-3. 🔥 Start the development server:
-```bash
-npm run dev
-```
-
-4. 🌐 Open your browser and go to `http://localhost:5173`
-
 ## 🎮 How to Use
 
 1. 🖱️ Click "Start Test" to begin
