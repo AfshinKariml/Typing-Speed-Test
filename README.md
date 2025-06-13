@@ -19,7 +19,7 @@ Test your typing speed and accuracy with this simple web application! 🚀
 
 1. 📥 Clone the repository:
 ```bash
-git clone https://github.com/AfshinKariml/Typing-Speed-Test
+git clone https://github.com/AfshinKariml/Typing-Speed-Test.git
 cd typing-speed-test
 ```
 ## 🎮 How to Use
